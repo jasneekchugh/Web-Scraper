@@ -4,7 +4,6 @@ library(xml2)
 library(stringr)
 library(pdftools)
 
-
 webUrl = "https://www.jstage.jst.go.jp/browse/cbij/%s/%s/_contents/-char/en/"
 htmlTags = list(
   "article-list" = "div#search-resultslist-wrap",
