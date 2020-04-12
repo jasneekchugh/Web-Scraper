@@ -17,7 +17,6 @@ htmlTags = list(
   "article-keywords" = "div.global-tags"
 )
 
-
 getPdfName <- function(url){
   x <- strsplit(url,"/")
   name.txt <- x[[1]][8] 
