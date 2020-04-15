@@ -38,6 +38,7 @@ getAbstract<- function(url){
   article_abstract = regmatches(abs, article_abstract)
   article_abstract = substr(article_abstract, 13, str_length(article_abstract)-5)
   article_abstract = str_replace_all(article_abstract, "\n", "")
+  
 }
 
 countSubLinks <- function(year){
@@ -119,7 +120,7 @@ scrapePage <- function(url){
 
 getJournal <- function(year){
   if(year > 2020 | year < 2001){
-    stop("The articles for the given year does not exist for our Journal. Please provide year between 2001-2020")
+    stop("The articles for the given year do not exist for our Journal. Please provide year between 2001-2020")
   }
   
   yearUrls = c()
